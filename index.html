@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brava — o seu próximo caminho começa aqui</title>
+    <meta
+      name="description"
+      content="Equipamentos para dias lá fora. Conheça a Brava: uma loja outdoor demonstrativa com mochilas, vestuário e camping. Explore, escolha e simule sua compra."
+    />
+    <meta name="theme-color" content="#253e2f" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://gustapaz.github.io/brava/" />
+    <meta property="og:title" content="Brava — feito para ir lá fora" />
+    <meta
+      property="og:description"
+      content="Menos rotina, mais caminho. Uma experiência outdoor interativa, com produtos e compras fictícios."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gustapaz.github.io/brava/" />
+    <meta
+      property="og:image"
+      content="https://gustapaz.github.io/brava/images/hero.svg"
+    />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div class="announcement">
+      <span>O lado de fora está te chamando.</span
+      ><span
+        >Frete simulado grátis a partir de R$ 500
+        <span aria-hidden="true">↗</span></span
+      ><button data-action="about">
+        Loja demonstrativa <span aria-hidden="true">ⓘ</span>
+      </button>
+    </div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#inicio" class="wordmark" aria-label="Brava, início"
+          ><svg aria-hidden="true" viewBox="0 0 36 32">
+            <path d="m2 28 16-25 16 25H2m8-13 8 6 7-6" /></svg
+          >BRAVA<span>®</span></a
+        >
+        <nav aria-label="Principal">
+          <a href="#catalogo" class="nav-active">Equipamentos</a
+          ><a href="#catalogo" data-category="Mochilas">Mochilas</a
+          ><a href="#catalogo" data-category="Vestuário">Vestuário</a
+          ><a href="#essencia">Nossa essência</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="icon-button"
+            data-action="search"
+            aria-label="Buscar equipamentos"
+          >
+            <span data-icon="search"></span></button
+          ><button
+            class="icon-button"
+            data-action="favorites"
+            aria-label="Ver favoritos"
+            aria-pressed="false"
+          >
+            <span data-icon="heart"></span
+            ><span class="counter" id="favorites-count" hidden>0</span></button
+          ><button
+            class="cart-trigger"
+            data-action="cart"
+            aria-label="Abrir sacola"
+          >
+            <span data-icon="bag"></span><span class="cart-label">Sacola</span
+            ><span class="bag-count" id="cart-count">0</span></button
+          ><button
+            class="icon-button mobile-nav"
+            data-action="menu"
+            aria-label="Abrir navegação"
+          >
+            <span data-icon="menu"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="conteudo" tabindex="-1">
+      <section id="inicio" class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><i></i>PARA OS DIAS LÁ FORA</p>
+          <h1 id="hero-title">
+            O mundo é grande.<br />Sua vontade de ir,<br /><em>também.</em>
+          </h1>
+          <p class="hero-description">
+            Equipamentos que acompanham o seu ritmo.<br class="desktop-break" />
+            Da primeira trilha ao próximo horizonte.
+          </p>
+          <a class="button light" href="#catalogo"
+            >Encontre seu equipamento <span data-icon="arrow"></span
+          ></a>
+          <div class="hero-bottom">
+            <span class="coordinate"
+              >22°57′ S &nbsp; 43°12′ W<br /><small
+                >O próximo destino é seu.</small
+              ></span
+            ><span class="hero-stamp"
+              ><span data-icon="mountain"></span>FEITO PARA<br />SEGUIR EM
+              FRENTE</span
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            src="/images/hero.svg"
+            width="900"
+            height="900"
+            alt="Mochila laranja em uma paisagem ilustrada de montanhas verdes"
+            fetchpriority="high"
+          />
+          <div class="hero-visual-label">
+            <span><i></i>SELEÇÃO BRAVA</span
+            ><a href="#produto/serra-32"
+              >Mochila Serra 32L <span data-icon="arrow"></span
+            ></a>
+          </div>
+          <span class="vertical-label">MENOS ROTINA. MAIS CAMINHO.</span>
+        </div>
+      </section>
+      <div class="benefits" aria-label="Diferenciais da experiência">
+        <div>
+          <span data-icon="truck"></span>
+          <p>
+            <strong>O caminho por nossa conta</strong
+            ><span>Frete simulado grátis acima de R$ 500</span>
+          </p>
+        </div>
+        <div>
+          <span data-icon="return"></span>
+          <p>
+            <strong>Escolha com tranquilidade</strong
+            ><span>Explore cores, tamanhos e detalhes</span>
+          </p>
+        </div>
+        <div>
+          <span data-icon="leaf"></span>
+          <p>
+            <strong>Leve só o que faz sentido</strong
+            ><span>Equipamentos para cada tipo de saída</span>
+          </p>
+        </div>
+        <div>
+          <span data-icon="shield"></span>
+          <p>
+            <strong>Uma experiência sem compromisso</strong
+            ><span>Sem cobranças. Tudo demonstrativo.</span>
+          </p>
+        </div>
+      </div>
+      <section
+        class="catalog section-wrap"
+        id="catalogo"
+        aria-labelledby="catalog-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ESCOLHA O SEU PRÓXIMO COMPANHEIRO</p>
+            <h2 id="catalog-title" tabindex="-1">
+              Pronto para <em>ir junto.</em>
+            </h2>
+          </div>
+          <p>
+            O essencial para ir além.<br />O resto, você encontra pelo caminho.
+          </p>
+        </div>
+        <div class="catalog-top">
+          <div class="category-tabs" role="group" aria-label="Categorias">
+            <button data-category="Todos" aria-pressed="true">
+              Todos <span>09</span></button
+            ><button data-category="Mochilas" aria-pressed="false">
+              Mochilas</button
+            ><button data-category="Vestuário" aria-pressed="false">
+              Vestuário</button
+            ><button data-category="Camping" aria-pressed="false">
+              Camping</button
+            ><button data-category="Acessórios" aria-pressed="false">
+              Acessórios
+            </button>
+          </div>
+          <button
+            class="filter-toggle"
+            data-action="filters"
+            aria-expanded="false"
+            aria-controls="filter-panel"
+          >
+            <span data-icon="filter"></span>Filtrar
+            <span id="filter-count"></span>
+          </button>
+        </div>
+        <div class="filter-panel" id="filter-panel" hidden>
+          <label
+            >Preço máximo <span id="price-value">R$ 1.000,00</span
+            ><input
+              type="range"
+              id="price-filter"
+              min="10000"
+              max="100000"
+              step="1000"
+              value="100000"
+          /></label>
+          <p>Seleção de equipamentos com preços fictícios.</p>
+          <button class="text-button" data-action="clear">
+            Limpar filtros <span data-icon="close"></span>
+          </button>
+        </div>
+        <div class="catalog-toolbar">
+          <label class="catalog-search"
+            ><span data-icon="search"></span
+            ><span class="sr-only">Buscar no catálogo</span
+            ><input
+              id="catalog-search"
+              type="search"
+              placeholder="Qual é o seu próximo equipamento?"
+              maxlength="120"
+          /></label>
+          <div>
+            <span id="result-count" role="status">9 equipamentos</span
+            ><label class="sort-label"
+              ><span class="sr-only">Ordenar produtos</span
+              ><select id="sort">
+                <option value="featured">Destaques</option>
+                <option value="price-up">Menor preço</option>
+                <option value="price-down">Maior preço</option>
+                <option value="name">Nome: A–Z</option>
+              </select></label
+            >
+          </div>
+        </div>
+        <div class="active-favorites" id="favorites-banner" hidden>
+          <span data-icon="heart"></span>Seus favoritos, salvos neste
+          navegador.<button class="text-button" data-action="favorites">
+            Ver catálogo completo <span data-icon="close"></span>
+          </button>
+        </div>
+        <div class="product-grid" id="product-grid"><!-- CATALOG --></div>
+        <div class="catalog-footnote">
+          <span><i></i>Ilustrações, produtos e avaliações fictícios.</span>
+          <p>Uma loja para explorar. Uma compra para simular.</p>
+        </div>
+      </section>
+      <section
+        class="essence section-wrap"
+        id="essencia"
+        aria-labelledby="essence-title"
+      >
+        <div class="essence-art" aria-hidden="true">
+          <span class="contour c1"></span><span class="contour c2"></span
+          ><span class="contour c3"></span><span class="contour c4"></span>
+          <div class="big-mountain">
+            <svg viewBox="0 0 300 240">
+              <path d="m10 220 140-210 140 210H10m81-121 59 42 57-42" /></svg
+            ><span>VÁ LÁ FORA.</span><small>VOLTE COM HISTÓRIAS.</small>
+          </div>
+        </div>
+        <div class="essence-copy">
+          <p class="eyebrow">NOSSA ESSÊNCIA</p>
+          <h2>
+            Não é sobre chegar<br />mais longe.<br />É sobre <em>estar lá.</em>
+          </h2>
+          <p>
+            Acreditamos nos desvios de rota, no café feito com calma e naquela
+            vontade de ficar mais cinco minutos olhando a vista.
+          </p>
+          <p>
+            A Brava nasceu como uma marca imaginária para quem encontra um pouco
+            de si do lado de fora. Equipamentos simples. Possibilidades enormes.
+          </p>
+          <button class="text-button" data-action="guide">
+            Encontre a mochila do seu caminho <span data-icon="arrow"></span>
+          </button>
+        </div>
+      </section>
+      <section class="invitation section-wrap">
+        <div>
+          <p class="eyebrow">PEQUENOS PLANOS. GRANDES DIAS.</p>
+          <h2>Tem um caminho<br />esperando por <em>você.</em></h2>
+        </div>
+        <div>
+          <p>
+            Comece pelo essencial. Explore nossa seleção e monte sua sacola para
+            a próxima aventura imaginária.
+          </p>
+          <a class="button dark" href="#catalogo"
+            >Vamos lá fora <span data-icon="arrow"></span
+          ></a>
+        </div>
+        <span class="invitation-star" aria-hidden="true">✳</span>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top section-wrap">
+        <div>
+          <a href="#inicio" class="wordmark">BRAVA<span>®</span></a>
+          <p>Menos rotina. Mais caminho.</p>
+          <span class="footer-demo"
+            ><i></i>Uma loja de demonstração, por Gustavo Paz.</span
+          >
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <a href="#catalogo" data-category="Mochilas">Mochilas</a
+          ><a href="#catalogo" data-category="Vestuário">Vestuário</a
+          ><a href="#catalogo" data-category="Camping">Camping</a
+          ><a href="#catalogo" data-category="Acessórios">Acessórios</a>
+        </div>
+        <div>
+          <h2>Por aqui</h2>
+          <button data-action="guide">Guia de mochilas</button
+          ><button data-action="shipping">Entrega e trocas</button
+          ><button data-action="about">Sobre a demonstração</button
+          ><button data-action="privacy">Privacidade e dados locais</button>
+        </div>
+        <div class="footer-note">
+          <span data-icon="mountain"></span>
+          <p>Não precisa ir longe<br />para sair do comum.</p>
+          <small>Feito para explorar, sem comprar.</small>
+        </div>
+      </div>
+      <div class="footer-bottom section-wrap">
+        <span>© 2026 Brava · marca e produtos fictícios</span
+        ><a
+          href="https://github.com/gustapaz/brava"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Explore o código <span data-icon="arrow"></span></a
+        ><span>Projetado para o lado de fora. ↗</span>
+      </div>
+    </footer>
+    <dialog id="modal" aria-labelledby="modal-title">
+      <div id="modal-content"></div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div
+      class="storage-warning"
+      id="storage-warning"
+      role="status"
+      hidden
+    ></div>
+    <noscript
+      ><p class="noscript">
+        Ative o JavaScript para usar os filtros, os detalhes e a sacola
+        demonstrativa. Nenhuma compra é real.
+      </p></noscript
+    >
+  </body>
+</html>

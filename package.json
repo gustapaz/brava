@@ -1,0 +1,25 @@
+{
+  "name": "brava",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Gustavo Paz",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/assets.mjs && vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.js",
+    "format": "prettier --write src scripts tests index.html vite.config.js"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.2.8"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5",
+    "prettier": "^3.8.1"
+  }
+}
